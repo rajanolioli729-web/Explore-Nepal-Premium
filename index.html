@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Nepal Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+    <div class="loader">
+
+        <h1>EXPLORE NEPAL</h1>
+
+    </div>
+
+    <!-- PROGRESS BAR -->
+
+    <div class="progress-bar"></div>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+
+
+
+                <a href="index.html" class="active-link">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="destinations.html">Destinations</a>
+
+            </div>
+
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="nav-logo">
+                EXPLORE NEPAL
+            </div>
+
+            <div class="nav-right">
+
+                <a href="contact.html">Contact</a>
+
+                <a href="book.html" class="book-btn">Book Now</a>
+
+
+
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <video autoplay muted loop playsinline>
+
+            <source src="https://cdn.coverr.co/videos/coverr-flying-over-the-mountains-1560087837434?download=1080p"
+                type="video/mp4">
+
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <p>LUXURY TOURISM EXPERIENCE</p>
+
+            <h1 class="typing"></h1>
+
+            <button onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">
+                Explore More
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- DESTINATIONS -->
+
+    <section class="destinations" id="destinations">
+
+        <div class="title">
+
+            <p>PREMIUM DESTINATIONS</p>
+
+            <h2>Luxury Adventures</h2>
+
+        </div>
+
+        <div class="cards">
+
+
+            <!-- POKHARA -->
+            <div class="card">
+                <img src="https://www.chariotindia.in/wp-content/uploads/2022/10/Pokhara-Phewa-Lake.jpg">
+
+                <div class="card-content">
+                    <h3>Pokhara</h3>
+                    <p>Beautiful lakeside luxury destination with Himalayan views.</p>
+
+                    <div class="btn-group">
+                       <button class="explore-btn popup-btn"
+                            onclick="openPopup('Pokhara','Pokhara is Nepal’s tourism capital famous for Phewa Lake and adventure tourism.','https://www.chariotindia.in/wp-content/uploads/2022/10/Pokhara-Phewa-Lake.jpg')">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/place/Pokhara/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EVEREST -->
+            <div class="card">
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.s1CAr5eVwP8dQbhWhiWvpQHaEK?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3">
+
+                <div class="card-content">
+                    <h3>Everest</h3>
+                    <p>Premium trekking adventure in the world's highest mountains.</p>
+
+                    <div class="btn-group">
+                       <button class="explore-btn popup-btn"
+                            onclick="openPopup('Mount Everest','Mount Everest is the highest mountain in the world.','https://tse4.mm.bing.net/th/id/OIP.s1CAr5eVwP8dQbhWhiWvpQHaEK?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3')">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/place/Mount+Everest/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LUMBINI -->
+            <div class="card">
+                <img src="https://nepalpeakadventure.com/wp-content/uploads/2024/03/lumbini-1024x512.webp">
+
+                <div class="card-content">
+                    <h3>Lumbini</h3>
+                    <p>Peaceful spiritual destination with rich cultural heritage.</p>
+
+                    <div class="btn-group">
+                       <button class="explore-btn popup-btn"
+                            onclick="openPopup('Lumbini','Birthplace of Lord Buddha and UNESCO World Heritage Site.','https://nepalpeakadventure.com/wp-content/uploads/2024/03/lumbini-1024x512.webp')">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/place/Lumbini/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+<!-- EXPLORE VISUALS / NEPAL GALLERY -->
+
+
+    <section class="gallery" id="gallery">
+
+        <div class="title">
+            <p>EXPLORE VISUALS</p>
+            <h2>Nepal Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- POKHARA -->
+            <div class="card">
+                <img
+                    src="https://th.bing.com/th/id/R.80f2e5d7d6d77e351e5bf07b14564010?rik=2Z%2bfDMu%2bMVEchg&pid=ImgRaw&r=0">
+
+                <div class="card-content">
+                    <h3>Pokhara</h3>
+                    <p>Pokhara is a beautiful lakeside city in Nepal surrounded by the Himalayas.
+                        It is famous for Phewa Lake, adventure sports, and stunning natural scenery.</p>
+
+                    <div class="btn-group">
+                        <button class="explore-btn popup-btn" data-title="Pokhara"
+                            data-text="Pokhara is Nepal’s tourism capital famous for Phewa Lake, adventure sports, and Himalayan views."
+                            data-img="https://th.bing.com/th/id/R.80f2e5d7d6d77e351e5bf07b14564010?rik=2Z%2bfDMu%2bMVEchg&pid=ImgRaw&r=0">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/place/Pokhara/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EVEREST -->
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.mvnFRrKbjFJk3bkDH9zcMgHaEJ?pid=ImgDetMain">
+
+                <div class="card-content">
+                    <h3>Mount Everest</h3>
+                    <p>Mount Everest is the highest mountain in the world, located in the Himalayas.
+                        It is a famous destination for climbers and symbolizes ultimate adventure.</p>
+
+                    <div class="btn-group">
+                        <button class="explore-btn popup-btn" data-title="Mount Everest"
+                            data-text="The highest peak in the world."
+                            data-img="https://tse4.mm.bing.net/th/id/OIP.mvnFRrKbjFJk3bkDH9zcMgHaEJ?pid=ImgDetMain">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/place/Mount+Everest/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LUMBINI -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/e7/03/3f/e7033fa380967c19ae02df061c86c056.jpg">
+
+                <div class="card-content">
+                    <h3>Lumbini</h3>
+                    <p>Gautama Buddha, also known as Lord Buddha, was a spiritual teacher born in Lumbini (modern-day
+                        Nepal), Gautama Buddha was the founder of Buddhism.</p>
+
+                    <div class="btn-group">
+                        <button class="explore-btn popup-btn" data-title="Lumbini"
+                            data-text="UNESCO World Heritage Site."
+                            data-img="https://i.pinimg.com/736x/e7/03/3f/e7033fa380967c19ae02df061c86c056.jpg">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/place/Lumbini/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HIMALAYA -->
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.SZndPkSa3Fa7FlV5zY2g1gHaD3">
+
+                <div class="card-content">
+                    <h3>Himalayan Range</h3>
+                    <p>The majestic snow-capped Himalayas of Nepal, home to the world’s highest peaks.</p>
+
+                    <div class="btn-group">
+                        <button class="explore-btn popup-btn" data-title="Himalayas"
+                            data-text="Breathtaking mountain range in Nepal."
+                            data-img="https://tse1.mm.bing.net/th/id/OIP.SZndPkSa3Fa7FlV5zY2g1gHaD3">
+                            Explore
+                        </button>
+
+                        <a href="https://www.google.com/maps/search/Himalayas+Nepal/" target="_blank">
+                            <button class="map-btn">Map</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Explore Nepal</h2>
+
+            <p>
+                Luxury Tourism Experience Across Nepal
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://www.facebook.com/rajan.oli.75286" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/rajan444706" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@rajanolwee" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 Explore Nepal | All Rights Reserved <br>
+
+                Designed By Rajan Oli, Manisha Nepali & Krishna Dhawal
+
+            </div>
+
+        </div>
+
+    </footer>
+
+   
+
+    <div id="popup">
+        <div class="popup-box">
+            <span class="popup-close" onclick="closePopup()">×</span>
+            <img id="popup-img">
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
