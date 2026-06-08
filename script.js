@@ -1,6 +1,6 @@
-/* ========================================
-   NAVBAR SCROLL EFFECT
-======================================== */
+
+//    NAVBAR SCROLL EFFECT
+
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
 
@@ -14,9 +14,9 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* ========================================
-   SCROLL REVEAL ANIMATION
-======================================== */
+
+//    SCROLL REVEAL ANIMATION
+
 const allCards = document.querySelectorAll('.card');
 
 function revealCards() {
@@ -35,9 +35,9 @@ window.addEventListener('scroll', revealCards);
 revealCards();
 
 
-/* ========================================
-   TYPING EFFECT
-======================================== */
+
+//    TYPING EFFECT
+
 const text = "Discover The Beauty Of Nepal";
 let index = 0;
 
@@ -55,9 +55,9 @@ function typingEffect() {
 typingEffect();
 
 
-/* ========================================
-   LOADER
-======================================== */
+
+//    LOADER
+
 window.addEventListener('load', () => {
 
     const loader = document.querySelector('.loader');
@@ -71,9 +71,9 @@ window.addEventListener('load', () => {
 });
 
 
-/* ========================================
-   PROGRESS BAR
-======================================== */
+
+//    PROGRESS BAR
+
 window.addEventListener('scroll', () => {
 
     const progressBar = document.querySelector('.progress-bar');
@@ -91,51 +91,12 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* ========================================
-   POPUP SYSTEM
-======================================== */
-const popupButtons = document.querySelectorAll(".popup-btn");
-
-popupButtons.forEach(btn => {
-
-    btn.addEventListener("click", () => {
-
-        const title = btn.dataset.title;
-        const text = btn.dataset.text;
-        const img = btn.dataset.img;
-
-        document.getElementById("popup-title").innerText = title;
-        document.getElementById("popup-text").innerText = text;
-        document.getElementById("popup-img").src = img;
-
-        document.getElementById("popup").style.display = "flex";
-
-    });
-
-});
 
 
-/* CLOSE POPUP */
-function closePopup() {
-
-    document.getElementById("popup").style.display = "none";
-
-}
 
 
-/* CLICK OUTSIDE TO CLOSE */
-document.getElementById("popup").addEventListener("click", function (e) {
+//    RIPPLE EFFECT
 
-    if (e.target.id === "popup") {
-        this.style.display = "none";
-    }
-
-});
-
-
-/* ========================================
-   RIPPLE EFFECT
-======================================== */
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => {
@@ -177,9 +138,9 @@ buttons.forEach(button => {
 });
 
 
-/* ========================================
-   SMOOTH SCROLL
-======================================== */
+
+//    SMOOTH SCROLL
+
 function scrollToDestinations() {
 
     const section =

@@ -240,88 +240,6 @@
             color: black;
         }
 
-        /* DESTINATION BUTTON */
-
-        .destination-section {
-            text-align: center;
-            margin-top: 70px;
-        }
-
-        .destination-btn {
-            padding: 18px 40px;
-            background: linear-gradient(135deg, #d4af37, #f5d76e);
-            border: none;
-            border-radius: 60px;
-            color: black;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.4s;
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-        }
-
-        .destination-btn:hover {
-            transform: translateY(-5px) scale(1.03);
-        }
-
-        /* POPUP */
-
-        .popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-        }
-
-        .popup-box {
-            width: 90%;
-            max-width: 500px;
-            background: #081120;
-            padding: 40px;
-            border-radius: 25px;
-            text-align: center;
-            position: relative;
-            animation: popupAnim 0.5s ease;
-        }
-
-        .popup-box h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #d4af37;
-        }
-
-        .popup-box p {
-            color: #ddd;
-            line-height: 1.8;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        @keyframes popupAnim {
-
-            from {
-                transform: scale(0.7);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
         /* FOOTER */
 
         footer {
@@ -400,7 +318,7 @@
                 <a href="about.html">About</a>
                 <a href="gallery.html" class="active-link">Gallery</a>
 
-                <a href="destinations.html">Destinations</a>
+
 
             </div>
 
@@ -464,18 +382,11 @@
                     <p>
                         Beautiful lakeside destination with mountain reflections and boating.
                     </p>
+                    <div class="btn-group">
 
-                    <div class="gallery-buttons">
-
-                        <button class="explore-btn" onclick="openPopup(
-'Pokhara Lakeside',
-'Pokhara is famous for Phewa Lake, paragliding, boating and Himalayan mountain views.',
-'https://www.himalayanluxuryholidays.com/wp-content/uploads/2018/09/Pokhara_sightseeing.jpg'
-)">
-
-                            Explore
-
-                        </button>
+                        <a href="himaliyan.html">
+                            <button class="explore-btn">Explore</button>
+                        </a>
 
                         <a href="https://www.google.com/maps/place/Pokhara/" target="_blank">
 
@@ -491,34 +402,31 @@
 
             </div>
 
-            <!-- EVEREST -->
+        
 
-            <div class="gallery-item">
+        <!-- EVEREST -->
 
-                <img
-                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop">
+        <div class="gallery-item">
 
-                <div class="gallery-content">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop">
 
-                    <h3>Mount Everest</h3>
-               
-                    
+            <div class="gallery-content">
 
-                    <p>
-                        The highest mountain in the world and pride of Nepal.
-                    </p>
+                <h3>Mount Everest</h3>
 
-                    <div class="gallery-buttons">
 
-                        <button class="explore-btn" onclick="openPopup(
-'Mount Everest',
-'Mount Everest is the tallest mountain in the world attracting climbers from all over the globe.',
-'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop'
-)">
 
-                            Explore
+                <p>
+                    The highest mountain in the world and pride of Nepal.
+                </p>
 
-                        </button>
+                <div class="gallery-buttons">
+
+                    <div class="btn-group">
+
+                        <a href="everest.html">
+                            <button class="explore-btn">Explore</button>
+                        </a>
 
                         <a href="https://www.google.com/maps/place/Mount+Everest/" target="_blank">
 
@@ -534,32 +442,32 @@
 
             </div>
 
-            <!-- LUMBINI -->
+        </div>
 
-            <div class="gallery-item">
+        <!-- LUMBINI -->
 
-                <img
-                    src="https://thumbs.dreamstime.com/b/visak-day-nightly-scenery-buddha-meditation-under-bodhi-tree-blue-background-vector-design-description-serene-depicts-380583160.jpg">
+        <div class="gallery-item">
 
-                <div class="gallery-content">
+            <img
+                src="https://thumbs.dreamstime.com/b/visak-day-nightly-scenery-buddha-meditation-under-bodhi-tree-blue-background-vector-design-description-serene-depicts-380583160.jpg">
 
-                    <h3>Lumbini</h3>
+            <div class="gallery-content">
 
-                    <p>
-                        Birthplace of Lord Buddha and peaceful spiritual destination.
-                    </p>
+                <h3>Lumbini</h3>
 
-                    <div class="gallery-buttons">
+                <p>
+                    Birthplace of Lord Buddha and peaceful spiritual destination.
+                </p>
 
-                        <button class="explore-btn" onclick="openPopup(
-'Lumbini',
-'Lumbini is the birthplace of Lord Buddha and one of the most peaceful religious places in Nepal.',
-'https://thumbs.dreamstime.com/b/visak-day-nightly-scenery-buddha-meditation-under-bodhi-tree-blue-background-vector-design-description-serene-depicts-380583160.jpg'
-)">
+                <div class="gallery-buttons">
 
-                            Explore
+                    <div class="btn-group">
 
-                        </button>
+                        <a href="lumbini.html">
+                            <button class="explore-btn">Explore</button>
+                        </a>
+
+
 
                         <a href="https://www.google.com/maps/place/Lumbini/" target="_blank">
 
@@ -577,37 +485,13 @@
 
         </div>
 
-        <!-- DESTINATION BUTTON -->
 
-        <div class="destination-section">
 
-            <a href="destinations.html">
 
-                <button class="destination-btn">
-                    View More Destinations
-                </button>
-
-            </a>
-
-        </div>
 
     </section>
 
-    <div class="popup" id="popup">
 
-        <div class="popup-box">
-
-            <span class="close-btn" onclick="closePopup()">×</span>
-
-            <img id="popup-img" style="width:100%; border-radius:15px; margin-bottom:15px; display:none;">
-
-            <h2 id="popup-title"></h2>
-
-            <p id="popup-text"></p>
-
-        </div>
-
-    </div>
 
     <!-- FOOTER -->
 
@@ -664,51 +548,6 @@
         </div>
 
     </footer>
-
-    <script>
-
-        function openPopup(title, text, image = "") {
-
-            const popup = document.getElementById("popup");
-            const popupTitle = document.getElementById("popup-title");
-            const popupText = document.getElementById("popup-text");
-            const popupImg = document.getElementById("popup-img");
-
-            popup.style.display = "flex";
-
-            popupTitle.innerHTML = title;
-            popupText.innerHTML = text;
-
-            if (popupImg) {
-
-                if (image !== "") {
-
-                    popupImg.src = image;
-                    popupImg.style.display = "block";
-
-                } else {
-
-                    popupImg.style.display = "none";
-                }
-            }
-        }
-
-        function closePopup() {
-
-            document.getElementById("popup").style.display = "none";
-        }
-
-        window.onclick = function (event) {
-
-            const popup = document.getElementById("popup");
-
-            if (event.target === popup) {
-
-                closePopup();
-            }
-        };
-
-    </script>
 
 </body>
 
