@@ -343,29 +343,27 @@
         }
 
         .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 32px;
-    z-index: 9999;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: 0.3s;
-}
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 32px;
+            z-index: 9999;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
 
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
     </style>
 
 </head>
@@ -406,7 +404,7 @@
 
     </header>
 
-        <!-- what's app floating button -->
+    <!-- what's app floating button -->
     <a href="https://wa.me/9767617148" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -458,14 +456,15 @@
         <div class="contact-form">
 
             <form action="https://api.web3forms.com/submit" id="contactForm" method="POST">
+                <input type="hidden" name="access_key" value="818538c1-c331-421e-8f65-68f1ad75f127">
 
-                <input type="text" placeholder="Your Name" required>
+                <input type="text" name="name" placeholder="Your Name" required>
 
-                <input type="email" placeholder="Your Email" required>
+                <input type="email" name="email" placeholder="Your Email" required>
 
-                <input type="text" placeholder="Subject">
+                <input type="text" name="subject" placeholder="Subject">
 
-                <textarea placeholder="Write Your Message"></textarea>
+                <textarea name="message" placeholder="Write Your Message"></textarea>
 
                 <button type="submit">
                     Send Message
@@ -516,20 +515,7 @@
 
     </footer>
 
-    <script>
 
-
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-
-            e.preventDefault();
-
-            alert("Thank You! Your message has been sent successfully.");
-
-            this.reset();
-
-        });
-
-    </script>
 
 </body>
 

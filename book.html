@@ -330,15 +330,18 @@
 
             <h3>Personal Details</h3>
 
-            <form id="bookingForm">
+            <form id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="818538c1-c331-421e-8f65-68f1ad75f127">
 
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="number" placeholder="Phone Number" required>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="phone" placeholder="Phone Number" required>
 
                 <h3>Travel Details</h3>
 
-                <select required>
+                    
+
+                <select name="destination" required>
                     <option value="">Select Destination</option>
                     <option>Pokhara</option>
                     <option>Everest Base Camp</option>
@@ -347,8 +350,8 @@
                     
                 </select>
 
-                <input type="date" required>
-                <textarea placeholder="Message"></textarea>
+                <input type="date" name="travel_date" required>
+                <textarea name="message" placeholder="Message"></textarea>
 
                 <h3>Payment Section</h3>
 
@@ -357,7 +360,7 @@
                     <img src="qr.jpeg" alt="QR">
                 </div>
 
-                <input type="text" id="paymentId" placeholder="Transaction ID" required>
+                <input type="text" name="transaction_id" id="paymentId" placeholder="Transaction ID" required>
 
                 <label class="payment-check">
                     <input type="checkbox" id="paymentCheck">
@@ -392,9 +395,7 @@
 
     <script>
 
-        document.getElementById("bookingForm").addEventListener("submit", function (e) {
-
-            e.preventDefault();
+  
 
             const paid = document.getElementById("paymentCheck").checked;
             const txn = document.getElementById("paymentId").value.trim();
@@ -412,7 +413,7 @@
             alert("🎉 Booking Successful!");
             this.reset();
 
-        });
+        
 
     </script>
 
