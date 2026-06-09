@@ -16,7 +16,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif; 
+            font-family: 'Poppins', sans-serif;
 
 
         }
@@ -73,7 +73,7 @@
             letter-spacing: 3px;
             font-size: 2rem;
             font-weight: 700;
-        
+
         }
 
         .nav-logo {
@@ -131,7 +131,8 @@
         ul {
             margin-left: 20px;
         }
-        p{
+
+        p {
             margin-left: 8px;
         }
 
@@ -246,6 +247,7 @@
             color: rgb(112, 13, 13);
             text-align: center;
             margin-top: 40px;
+            flex-wrap: wrap;
         }
 
         .back-btn {
@@ -259,23 +261,71 @@
         }
 
 
-        /* MOBILE */
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
 
+            .navbar {
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+            }
 
-        @media(max-width:768px) {
+            .nav-left,
+            .nav-right {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
 
-            h1 {
+            .logo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .nav-logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-section {
+                padding: 60px 5%;
+                gap: 30px;
+            }
+
+            .about-content h2 {
                 font-size: 2rem;
             }
 
-            .section h2 {
-                font-size: 1.5rem;
+            .about-content p {
+                font-size: 14px;
             }
 
-            .gallery img {
+            .social-icons {
+                flex-wrap: wrap;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item img {
                 height: 220px;
             }
 
+            .btn {
+                width: 90%;
+                max-width: 300px;
+                text-align: center;
+            }
+
+            .map-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         /* FOOTER */
@@ -378,11 +428,13 @@
 
     <div class="gallery">
         <div class="gallery-item">
-            <img src="https://images.fineartamerica.com/images-medium-large-5/the-great-himalayan-range-ramabhadran-thirupattur.jpg">
+            <img
+                src="https://images.fineartamerica.com/images-medium-large-5/the-great-himalayan-range-ramabhadran-thirupattur.jpg">
         </div>
 
         <div class="gallery-item">
-            <img src="https://pixelz.cc/wp-content/uploads/2018/07/ama-dablam-mountain-himalaya-range-nepal-uhd-4k-wallpaper.jpg">
+            <img
+                src="https://pixelz.cc/wp-content/uploads/2018/07/ama-dablam-mountain-himalaya-range-nepal-uhd-4k-wallpaper.jpg">
         </div>
 
         <div class="gallery-item">
@@ -391,75 +443,76 @@
     </div>
 
     <!-- Destination Info -->
-<h2>About the Himalayan Region</h2>
+    <h2>About the Himalayan Region</h2>
 
-<p>
-The Himalayan Region of Nepal is one of the most spectacular mountain areas in
-the world. It is home to eight of the world's fourteen highest peaks, including
-Mount Everest, the highest mountain on Earth. This region is famous for its
-snow-capped mountains, glaciers, deep valleys, alpine forests, and unique
-cultures of mountain communities.
+    <p>
+        The Himalayan Region of Nepal is one of the most spectacular mountain areas in
+        the world. It is home to eight of the world's fourteen highest peaks, including
+        Mount Everest, the highest mountain on Earth. This region is famous for its
+        snow-capped mountains, glaciers, deep valleys, alpine forests, and unique
+        cultures of mountain communities.
 
-The Himalayan Region attracts thousands of trekkers, climbers, and nature lovers
-every year. Popular destinations include Everest Base Camp, Annapurna Circuit,
-Langtang Valley, and Manaslu. Visitors can experience breathtaking landscapes,
-ancient monasteries, traditional Sherpa villages, and rich biodiversity.
+        The Himalayan Region attracts thousands of trekkers, climbers, and nature lovers
+        every year. Popular destinations include Everest Base Camp, Annapurna Circuit,
+        Langtang Valley, and Manaslu. Visitors can experience breathtaking landscapes,
+        ancient monasteries, traditional Sherpa villages, and rich biodiversity.
 
-Beyond its natural beauty, the Himalayan Region plays an important role in
-Nepal's culture, tourism, and environment. It offers unforgettable adventures,
-stunning mountain views, and a unique opportunity to explore one of the world's
-most remarkable natural wonders.
-</p>
+        Beyond its natural beauty, the Himalayan Region plays an important role in
+        Nepal's culture, tourism, and environment. It offers unforgettable adventures,
+        stunning mountain views, and a unique opportunity to explore one of the world's
+        most remarkable natural wonders.
+    </p>
 
     <!-- Attractions -->
-<h2>Top Attractions</h2>
+    <h2>Top Attractions</h2>
 
-<ul class="attractions">
-    <li>Mount Everest</li>
-    <li>Annapurna Region</li>
-    <li>Langtang Valley</li>
-    <li>Manaslu Circuit</li>
-    <li>Everest Base Camp Trek</li>
-    <li>Sagarmatha National Park</li>
-</ul>
+    <ul class="attractions">
+        <li>Mount Everest</li>
+        <li>Annapurna Region</li>
+        <li>Langtang Valley</li>
+        <li>Manaslu Circuit</li>
+        <li>Everest Base Camp Trek</li>
+        <li>Sagarmatha National Park</li>
+    </ul>
 
     <!-- Hotels -->
-<h2>Recommended Hotels & Lodges</h2>
+    <h2>Recommended Hotels & Lodges</h2>
 
-<div class="hotels">
+    <div class="hotels">
 
-    <div class="hotel-card">
-        <h3>Yeti Mountain Home</h3>
-        <p>Comfortable mountain lodge with beautiful Himalayan views.</p>
+        <div class="hotel-card">
+            <h3>Yeti Mountain Home</h3>
+            <p>Comfortable mountain lodge with beautiful Himalayan views.</p>
+        </div>
+
+        <div class="hotel-card">
+            <h3>Hotel Everest View</h3>
+            <p>Famous high-altitude hotel offering panoramic mountain scenery.</p>
+        </div>
+
+        <div class="hotel-card">
+            <h3>Mountain Lodges of Nepal</h3>
+            <p>Well-known accommodation network in trekking regions.</p>
+        </div>
+
     </div>
-
-    <div class="hotel-card">
-        <h3>Hotel Everest View</h3>
-        <p>Famous high-altitude hotel offering panoramic mountain scenery.</p>
-    </div>
-
-    <div class="hotel-card">
-        <h3>Mountain Lodges of Nepal</h3>
-        <p>Well-known accommodation network in trekking regions.</p>
-    </div>
-
-</div>
 
 
     <!-- Best time to visit -->
 
-<h2>Best Time to Visit</h2>
+    <h2>Best Time to Visit</h2>
 
-<p>
-The best time to visit the Himalayan Region is during spring (March to May)
-and autumn (September to November). These seasons offer clear skies,
-comfortable temperatures, and excellent visibility for trekking,
-mountaineering, and sightseeing.
-</p>
+    <p>
+        The best time to visit the Himalayan Region is during spring (March to May)
+        and autumn (September to November). These seasons offer clear skies,
+        comfortable temperatures, and excellent visibility for trekking,
+        mountaineering, and sightseeing.
+    </p>
 
     <!-- Map -->
     <div class="map-buttons">
-        <a href="https://www.google.com/maps/search/Himalayan+Range+Nepal" target="_blank" class="btn map-btn">View on Google Maps</a>
+        <a href="https://www.google.com/maps/search/Himalayan+Range+Nepal" target="_blank" class="btn map-btn">View on
+            Google Maps</a>
         <a href="index.html" class="btn back-btn">Back to Home</a>
     </div>
 

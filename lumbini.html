@@ -245,7 +245,8 @@
             background: #d4af37;
             color: rgb(112, 13, 13);
             text-align: center;
-            margin-top: 40px;
+            flex-wrap: wrap;
+
         }
 
         .back-btn {
@@ -259,23 +260,71 @@
         }
 
 
-        /* MOBILE */
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
 
+            .navbar {
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+            }
 
-        @media(max-width:768px) {
+            .nav-left,
+            .nav-right {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
 
-            h1 {
+            .logo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .nav-logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .page-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-section {
+                padding: 60px 5%;
+                gap: 30px;
+            }
+
+            .about-content h2 {
                 font-size: 2rem;
             }
 
-            .section h2 {
-                font-size: 1.5rem;
+            .about-content p {
+                font-size: 14px;
             }
 
-            .gallery img {
+            .social-icons {
+                flex-wrap: wrap;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item img {
                 height: 220px;
             }
 
+            .btn {
+                width: 90%;
+                max-width: 300px;
+                text-align: center;
+            }
+
+            .map-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         /* FOOTER */
@@ -414,47 +463,47 @@
     </p>
 
     <!-- Attractions -->
-<h2>Top Attractions</h2>
+    <h2>Top Attractions</h2>
 
-<ul class="attractions">
-    <li>Maya Devi Temple</li>
-    <li>Ashoka Pillar</li>
-    <li>Sacred Garden</li>
-    <li>World Peace Pagoda</li>
-    <li>Lumbini Museum</li>
-    <li>International Monastic Zone</li>
-</ul>
+    <ul class="attractions">
+        <li>Maya Devi Temple</li>
+        <li>Ashoka Pillar</li>
+        <li>Sacred Garden</li>
+        <li>World Peace Pagoda</li>
+        <li>Lumbini Museum</li>
+        <li>International Monastic Zone</li>
+    </ul>
 
     <!-- Hotels -->
-<h2>Recommended Hotels</h2>
+    <h2>Recommended Hotels</h2>
 
-<div class="hotels">
+    <div class="hotels">
 
-    <div class="hotel-card">
-        <h3>Tiger Palace Resort</h3>
-        <p>Luxury resort with modern facilities near Lumbini.</p>
+        <div class="hotel-card">
+            <h3>Tiger Palace Resort</h3>
+            <p>Luxury resort with modern facilities near Lumbini.</p>
+        </div>
+
+        <div class="hotel-card">
+            <h3>Buddha Maya Garden Hotel</h3>
+            <p>Popular hotel offering comfortable rooms and peaceful surroundings.</p>
+        </div>
+
+        <div class="hotel-card">
+            <h3>Lumbini Buddha Garden Resort</h3>
+            <p>Convenient accommodation close to major attractions.</p>
+        </div>
+
     </div>
 
-    <div class="hotel-card">
-        <h3>Buddha Maya Garden Hotel</h3>
-        <p>Popular hotel offering comfortable rooms and peaceful surroundings.</p>
-    </div>
+    <!-- best time to visit -->
+    <h2>Best Time to Visit</h2>
 
-    <div class="hotel-card">
-        <h3>Lumbini Buddha Garden Resort</h3>
-        <p>Convenient accommodation close to major attractions.</p>
-    </div>
-
-</div>
-
-<!-- best time to visit -->
- <h2>Best Time to Visit</h2>
-
-<p>
-The best time to visit Lumbini is from October to March when the weather is pleasant 
-and ideal for sightseeing. The Buddha Jayanti festival is also a special time to 
-experience the spiritual significance of Lumbini.
-</p>
+    <p>
+        The best time to visit Lumbini is from October to March when the weather is pleasant
+        and ideal for sightseeing. The Buddha Jayanti festival is also a special time to
+        experience the spiritual significance of Lumbini.
+    </p>
 
     <!-- Map -->
     <div class="map-buttons">
@@ -481,5 +530,15 @@ experience the spiritual significance of Lumbini.
     </footer>
 
     </body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+    </script>
 
 </html>

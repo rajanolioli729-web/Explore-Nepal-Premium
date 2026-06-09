@@ -287,23 +287,59 @@
             color: #666;
         }
 
-        /* MOBILE */
-
-        @media(max-width:900px) {
-
-            .contact-section {
-                grid-template-columns: 1fr;
-            }
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
 
             .navbar {
                 flex-direction: column;
+                padding: 15px;
                 gap: 15px;
             }
 
-            .contact-hero-content h1 {
-                font-size: 3rem;
+            .nav-left,
+            .nav-right {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
             }
 
+            .logo {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .nav-logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .contact-hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-hero-content p {
+                font-size: 14px;
+            }
+
+            .contact-section {
+                grid-template-columns: 1fr;
+                padding: 60px 5%;
+                gap: 30px;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 25px;
+            }
+
+            .contact-info h2 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
         }
     </style>
 
@@ -317,7 +353,7 @@
 
             <div class="nav-left">
 
-                <a href="index.html" >Home</a>
+                <a href="index.html">Home</a>
 
                 <a href="about.html">About</a>
 
@@ -389,7 +425,7 @@
 
         <div class="contact-form">
 
-            <form id="contactForm">
+            <form action="https://api.web3forms.com/submit" id="contactForm" method="POST">
 
                 <input type="text" placeholder="Your Name" required>
 
