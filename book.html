@@ -261,6 +261,31 @@
         flex-wrap: wrap;
     }
 }
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 32px;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
     </style>
 
 </head>
@@ -293,6 +318,11 @@
     <section class="hero">
         <h1>Book Your Journey</h1>
     </section>
+
+        <!-- what's app floating button -->
+    <a href="https://wa.me/9767617148" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <section class="booking-section">
 

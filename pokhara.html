@@ -370,6 +370,29 @@
             font-size: 14px;
             margin-top: 20px;
         }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 32px;
+            z-index: 9999;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
     </style>
 
 
@@ -382,6 +405,8 @@
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active-link">About</a>
                 <a href="gallery.html">Gallery</a>
+
+
 
 
             </div>
@@ -401,6 +426,11 @@
         </nav>
 
     </header>
+
+    <!-- what's app floating button -->
+    <a href="https://wa.me/9767617148" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <h1>Pokhara</h1>
     <!-- Images -->
