@@ -93,52 +93,6 @@ window.addEventListener('scroll', () => {
 
 
 
-
-
-//    RIPPLE EFFECT
-
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach(button => {
-
-    button.addEventListener('click', function (e) {
-
-        const circle = document.createElement('span');
-
-        const diameter = Math.max(
-            button.clientWidth,
-            button.clientHeight
-        );
-
-        const rect = button.getBoundingClientRect();
-
-        circle.style.width =
-            circle.style.height =
-            `${diameter}px`;
-
-        circle.style.left =
-            `${e.clientX - rect.left - diameter / 2}px`;
-
-        circle.style.top =
-            `${e.clientY - rect.top - diameter / 2}px`;
-
-        circle.classList.add('ripple');
-
-        const existingRipple =
-            button.querySelector('.ripple');
-
-        if (existingRipple) {
-            existingRipple.remove();
-        }
-
-        button.appendChild(circle);
-
-    });
-
-});
-
-
-
 //    SMOOTH SCROLL
 
 function scrollToDestinations() {
