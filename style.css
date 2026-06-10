@@ -338,6 +338,10 @@
             transform: scale(1.05);
         }
 
+        .active-link {
+            color: #d4af37 !important;
+        }        
+
 
 
         /* FOOTER */
